@@ -84,13 +84,14 @@ function getInitialData() {
         {
         domain: { x: [0, 1], y: [0, 1] },
         value: washfreq,
-        title: { text: "Belly Button Washing Frequency<br>Scrubs per Week" },
+        title: { text: "Belly Button Washing Frequency<br>Scrubs per Week", font: { size: 16 } },
         type: "indicator",
-        mode: "gauge+number"
+        mode: "gauge+number",
+        gauge: {bar: { color: "#148F77" } },
         }
     ];
     
-    var layoutGauge = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+    var layoutGauge = { margin: { t: 0, b: 0 } };
     Plotly.newPlot('gauge', dataGuage, layoutGauge);
 });
 }
@@ -185,13 +186,14 @@ function getNewData() {
           {
             domain: { x: [0, 1], y: [0, 1] },
             value: washfreq,
-            title: { text: "Belly Button Washing Frequency<br>Scrubs per Week" },
+            title: { text: "Belly Button Washing Frequency<br>Scrubs per Week", font: { size: 16 }  },
             type: "indicator",
-            mode: "gauge+number"
+            mode: "gauge+number",
+            gauge: {bar: { color: "#148F77" } },
           }
         ];
         
-        var layoutGauge = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+        var layoutGauge = { margin: { t: 0, b: 0 } };
         Plotly.newPlot('gauge', dataGuage, layoutGauge);
       });
 };
