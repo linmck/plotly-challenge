@@ -87,7 +87,7 @@ function getInitialData() {
         title: { text: "Belly Button Washing Frequency<br>Scrubs per Week", font: { size: 16 } },
         type: "indicator",
         mode: "gauge+number",
-        gauge: {bar: { color: "#148F77" } },
+        gauge: {bar: { color: "#148F77" }, axis: { range: [null, 9] } },
         }
     ];
     
@@ -189,7 +189,7 @@ function getNewData() {
             title: { text: "Belly Button Washing Frequency<br>Scrubs per Week", font: { size: 16 }  },
             type: "indicator",
             mode: "gauge+number",
-            gauge: {bar: { color: "#148F77" } },
+            gauge: {bar: { color: "#148F77" }, axis: { range: [null, 9] } },
           }
         ];
         
